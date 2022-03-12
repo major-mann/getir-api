@@ -1,0 +1,35 @@
+{
+    "name": "getir-api-challenge",
+    "version": "1.0.0",
+    "main": "src/index.js",
+    "author": "Calvin Mann <calvinmann@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "start": "node src/index.mjs",
+        "start:dev": "nodemon src/index.mjs",
+        "test": "jest",
+        "test:dev": "jest --watch",
+        "lint": "yarn eslint src/**/*.mjs"
+    },
+    "engines": {
+        "node": "16.x"
+    },
+    "dependencies": {
+        "es-main": "^1.0.2",
+        "express": "^4.17.3",
+        "minimist": "^1.2.5",
+        "mongodb": "^4.4.1",
+        "uuid": "^8.3.2"
+    },
+    "devDependencies": {
+        "@babel/plugin-syntax-import-meta": "^7.10.4",
+        "@babel/preset-env": "^7.16.11",
+        "babel-jest": "^27.5.1",
+        "babel-plugin-transform-import-meta": "^2.1.1",
+        "eslint": "^8.11.0",
+        "eslint-plugin-jest": "^26.1.1",
+        "jest": "^27.5.1",
+        "nodemon": "^2.0.15",
+        "supertest": "^6.2.2"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "run current",
+            "program": "${file}",
+            "args": [],
+            "skipFiles": ["<node_internals>/**"],
+            "type": "node",
+            "request": "launch"
+        },
+        {
+            "name": "jest",
+            "program": "${workspaceRoot}/node_modules/.bin/jest",
+            "args": ["--runInBand", "--i", "${file}"],
+            "skipFiles": ["<node_internals>/**"],
+            "type": "node",
+            "request": "launch"
+        }
+    ]
+}
